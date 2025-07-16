@@ -1,0 +1,7 @@
+### hello.cpp ###
+g++ -Wall -std=c++23 -o hello hello.cpp
+./hello
+
+### sim.cpp ###
+g++ -std=c++23 -O2 -Iinclude -o sim src/*.cpp
+./sim kernels/kernel1.kerr^C
