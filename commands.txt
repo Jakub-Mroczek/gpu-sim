@@ -4,4 +4,11 @@ g++ -Wall -std=c++23 -o hello hello.cpp
 
 ### sim.cpp ###
 g++ -std=c++23 -O2 -Iinclude -o sim src/*.cpp
-./sim kernels/kernel1.kerr^C
+./sim kernels/kernel1.kerr
+
+### Visual Studio ###
+mkdir build
+cd build
+cmake .. -G "NMake Makefiles" -DCMAKE_BUILD_TYPE=Release
+cmake --build . --config Release
+.\gpu-sim.exe kernels/kernel1.kerr
