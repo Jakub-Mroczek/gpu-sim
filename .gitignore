@@ -5,5 +5,5 @@ build/
 *.log
 hello*
 sim
-.vscode
+.vscode/
 .vs/
