@@ -11,4 +11,4 @@ mkdir build
 cd build
 cmake .. -G "NMake Makefiles" -DCMAKE_BUILD_TYPE=Release
 cmake --build . --config Release
-.\gpu-sim.exe kernels/kernel1.kerr
+.\gpu-sim.exe ../kernels/kernel1.kerr
